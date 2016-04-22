@@ -1,0 +1,30 @@
+{
+  "name": "angular-practice",
+  "version": "1.0.0",
+  "description": "angular-practice",
+  "main": "../src/index.js",
+  "scripts": {
+    "test": "karma start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bbkwsl/angular-practice.git"
+  },
+  "author": "yangfang2028@126.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbkwsl/angular-practice/issues"
+  },
+  "homepage": "https://github.com/bbkwsl/angular-practice",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "webpack": "^1.13.0",
+    "sass-loader": "^3.2.0",
+    "node-sass": "^3.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-core": "^6.7.7",
+    "babel-preset-es2015": "^6.6.0",
+    "angular-ui-router": "^0.2.18"
+  }
+}
