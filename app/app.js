@@ -1,7 +1,7 @@
 /**
  * @description []
- * @author [fang.yang@shuyun.com]
+ * @author [silence_yfang@126.com]
  * @date  2016-04-21
  */
-require('./services/timeoutService/index');
-require('./services/parseService/index');
+import parseService from './services/parseService';
+import timeoutService from './services/timeoutService';

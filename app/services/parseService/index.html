@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>angular parse服务</title>
 </head>
-<body ng-controller="Controller">
+<body ng-controller="Controller as $ctrl">
+    <h3>$parse 1+2 = {{ $ctrl.result }}</h3>
+    <h3>$parse context1 name : {{ $ctrl.context1 }}</h3>
+    <h3>$parse context2 name : {{ $ctrl.context2 }}</h3>
+    <h3>$parse cover result {{ $ctrl.coverContext }}</h3>
 
-<script src="/bundle.js"></script>
+    <script src="/bundle.js"></script>
 </body>
 </html>

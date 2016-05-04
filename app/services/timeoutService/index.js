@@ -3,24 +3,27 @@
  * @author [silence_yfang@126.com]
  * @date  2016-05-04
  */
-var angular = require('angular');
+import angular from 'angular';
 
-var app = angular.module('timeoutApp' , []);
+export default angular
+    .module('timeoutApp' , [])
+    .controller('timeoutController',
+        function TimeoutController($scope, $timeout) {
+            let $promise = $timeout(function () {
+                $scope.name = 'silence';
+            }, 1000);
+    })
+    .run(function ($timeout) {
+        let timer = $timeout(function () {
+            console.log('执行$timeout回调.');
+            return 'angular';
+        }, 1000);
 
-app.run(function ($timeout) {
-    var timer = $timeout(function () {
-        console.log('执行$timeout回调.');
-        return 'angular';
-    }, 1000);
-
-    timer.then(function (data) {
-        console.log('========');
-        console.log(data);
-    }, function (data) {
-        console.log('*********');
-        console.log(data);
-    });
-
-    $timeout.cancel(timer);
-
-});
+        timer.then(function (data) {
+            console.log(data);
+        }, function (data) {
+            console.log(data);
+        });
+    // $timeout.cancel(timer);
+    })
+    .name;
