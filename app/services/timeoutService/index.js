@@ -9,8 +9,9 @@ export default angular
     .module('timeoutApp' , [])
     .controller('timeoutController',
         function TimeoutController($scope, $timeout) {
+            let vm = this;
             let $promise = $timeout(function () {
-                $scope.name = 'silence';
+                vm.name = 'silence';
             }, 1000);
     })
     .run(function ($timeout) {
