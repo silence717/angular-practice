@@ -8,17 +8,22 @@ var webpack = require('webpack');
 
 module.exports = {
     devtool: 'source-map',
-    entry:'./src/app.js' ,
+    entry: {
+        app:  ['webpack-hot-middleware/client?reload=true', './app/app.js']
+    },
     output: {
         path: path.join(__dirname, 'build'),
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: "/"
     },
 
     resolve: {
         extensions: ['', '.js']
     },
 
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
 
     module: {
         loaders: [
@@ -27,8 +32,7 @@ module.exports = {
                 loaders: ['babel'],
                 exclude: /(node_modules|bower_components)/,
                 include: [path.join(__dirname, 'src')]
-            },
-            
+            }
         ]
     }
 };
