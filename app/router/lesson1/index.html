@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngRouteExample">
+<head>
+    <meta charset="UTF-8">
+    <title>ngRoute demo</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/newEvent">Create Event</a></li>
+                <li><a href="#/eventList">Event List</a></li>
+            </ul>
+        </nav>
+    </div>
+    <ng-view></ng-view>
+    <script src="/bundle.js"></script>
+</body>
+</html>

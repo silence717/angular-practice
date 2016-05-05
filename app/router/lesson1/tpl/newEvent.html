@@ -1,0 +1,16 @@
+<div>
+    <form  name="editEventForm">
+        <fieldset>
+            <div class="form-group">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" required placeholder="Name of your event..." ng-model="editCtrl.eventName">
+            </div>
+            <div class="form-group">
+                <label for="eventLocation">Location:</label>
+                <input type="text" id="eventLocation" required placeholder="Address of event..." ng-model="editCtrl.eventLocation">
+            </div>
+        </fieldset>
+        <buttton type="submit" class="btn btn-primary" ng-click="editCtrl.saveEvent(event, editForm)">save</buttton>
+        <buttton type="button" class="btn btn-default" ng-click="editCtrl.cancelEdit()">cancel</buttton>
+    </form>
+</div>

@@ -24,3 +24,8 @@ export default angular
         }
     }])
     .name;
+
+/***
+ * 官方为angular-cookies,不是angular-cookie,一个字母字母之差,既是官方和第三方的差别
+ */
+
