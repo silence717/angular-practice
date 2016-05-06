@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directive10App">
+<head>
+    <meta charset="UTF-8">
+    <title>指令之间的通信</title>
+</head>
+<body>
+    <my-tabs>
+        <my-pane title="Hello">
+            <p>Lorem ipsum dolor sit amet</p>
+        </my-pane>
+        <my-pane title="World">
+            <em>Mauris elementum elementum enim at suscipit.</em>
+            <p><a href ng-click="i = i + 1">counter: {{i || 0}}</a></p>
+        </my-pane>
+    </my-tabs>
+    <script src="/bundle.js"></script>
+</body>
+</html>

@@ -10,7 +10,16 @@ import filterService from './services/filterService';
 import cookieService from './services/cookieService';
 
 // directives 部分
-import oneDirective from './directives/step1';
+import directive1 from './directives/lesson1';
+import directive2 from './directives/lesson2';
+import directive3 from './directives/lesson3';
+import directive4 from './directives/lesson4';
+import directive5 from './directives/lesson5';
+import directive6 from './directives/lesson6';
+import directive7 from './directives/lesson7';
+import directive8 from './directives/lesson8';
+import directive9 from './directives/lesson9';
+import directive10 from './directives/lesson10';
 
 
 // router 部分

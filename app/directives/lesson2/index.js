@@ -1,12 +1,12 @@
 /**
- * @description [angular directive lesson1 使用template创建模板]
- * @author [silence_yfang@126.com]
+ * @description [angular directive,使用templateUrl引入]
+ * @author [fang.yang@shuyun.com]
  * @date  2016-05-04
  */
 import angular from 'angular';
 
 export default angular
-    .module('directive1App', [])
+    .module('directive2App', [])
     .controller('Controller', function ($scope) {
         $scope.customer = {
             name: 'silence',
@@ -15,7 +15,7 @@ export default angular
     })
     .directive('myCustomer' , function () {
         return {
-            template: `Name: {{customer.name}}  Address: {{customer.address}}`,
+            templateUrl: 'my-customer.html',
             restrict: 'ECA'
         };
     })
