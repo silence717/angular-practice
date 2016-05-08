@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="directive11App">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义指定使用repeat</title>
+</head>
+<body>
+    <div class="main" ng-controller="MainController">
+        <div class="container">
+            <div class="card" ng-repeat="app in apps">
+                <app-info info=app></app-info>
+            </div>
+        </div>
+    </div>
+<script src="/bundle.js"></script>
+</body>
+</html>

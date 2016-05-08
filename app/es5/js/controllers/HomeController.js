@@ -1,0 +1,10 @@
+/**
+ * @description []
+ * @author [silence_yfang@126.com]
+ * @date  2016-05-08
+ */
+app.controller('HomeController', ['$scope', 'photos', function($scope, photos) {
+    photos.success(function(data) {
+        $scope.photos = data;
+    });
+}]);

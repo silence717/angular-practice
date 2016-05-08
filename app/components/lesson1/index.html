@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="heroApp">
+<head>
+    <meta charset="UTF-8">
+    <title>components study</title>
+</head>
+<body>
+    <div ng-controller="mainCtrl as ctrl">
+        <b>Hero</b><br>
+        <hero-detail hero="ctrl.hero"></hero-detail>
+    </div>
+    <div>
+        <h2>Comparison between Directive definition and Component definition</h2>
+        <table border="1" style="border-collapse: collapse;">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Directive</th>
+            <th>Component</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>bindings</td>
+            <td>No</td>
+            <td>Yes (binds to controller)</td>
+        </tr>
+        <tr>
+            <td>bindToController</td>
+            <td>Yes (default: false)</td>
+            <td>No (use bindings instead)</td>
+        </tr>
+        <tr>
+            <td>compile function</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>controller</td>
+            <td>Yes</td>
+            <td>Yes (default <code><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{}</span></code>)</td>
+        </tr>
+        <tr>
+            <td>controllerAs</td>
+            <td>Yes (default: false)</td>
+            <td>Yes (default: <code><span class="pln">$ctrl</span></code>)</td>
+        </tr>
+        <tr>
+            <td>link functions</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>multiElement</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>priority</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>require</td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+        <tr>
+            <td>restrict</td>
+            <td>Yes</td>
+            <td>No (restricted to elements only)</td>
+        </tr>
+        <tr>
+            <td>scope</td>
+            <td>Yes (default: false)</td>
+            <td>No (scope is always isolate)</td>
+        </tr>
+        <tr>
+            <td>template</td>
+            <td>Yes</td>
+            <td>Yes, injectable</td>
+        </tr>
+        <tr>
+            <td>templateNamespace</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>templateUrl</td>
+            <td>Yes</td>
+            <td>Yes, injectable</td>
+        </tr>
+        <tr>
+            <td>terminal</td>
+            <td>Yes</td>
+            <td>No</td>
+        </tr>
+        <tr>
+            <td>transclude</td>
+            <td>Yes (default: false)</td>
+            <td>Yes (default: false)</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <script src="../../../node_modules/angular/angular.js"></script>
+    <script src="./index.js"></script>
+    <script src="./heroDetail.js"></script>
+</body>
+</html>
