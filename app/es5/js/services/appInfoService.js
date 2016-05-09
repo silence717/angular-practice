@@ -1,10 +1,10 @@
 /**
- * @description []
+ * @description [几款运动app]
  * @author [silence_yfang@126.com]
  * @date  2016-05-08
  */
-app.factory('forecast', ['$http', function($http) {
-    return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/forecast-api/forecast.json')
+app.factory('appInfoService', ['$http', function($http) {
+    return $http.get('data/appInfo.json')
     .success(function(data) {
         return data;
     })

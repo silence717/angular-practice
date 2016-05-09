@@ -1,10 +1,10 @@
 /**
- * @description []
+ * @description [请求照片数据]
  * @author [silence_yfang@126.com]
  * @date  2016-05-08
  */
 app.factory('photos', ['$http', function($http) {
-    return $http.get('https://s3.amazonaws.com/codecademy-content/courses/ltp4/photos-api/photos.json')
+    return $http.get('data/photos.json')
     .success(function(data) {
         return data;
     })
